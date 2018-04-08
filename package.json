@@ -1,7 +1,7 @@
 {
-  "name": "atom-image-uploader",
+  "name": "markdown-image-uploader",
   "main": "./lib/atom-image-uploader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "markdown image uploader",
   "keywords": [],
   "activationCommands": {
