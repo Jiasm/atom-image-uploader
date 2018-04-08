@@ -1,0 +1,11 @@
+extends: standard
+rules:
+  camelcase: 0
+  react/jsx-uses-react: error
+  react/jsx-uses-vars: error
+plugins:
+  [react]
+ecmaFeatures:
+  jsx: true
+globals:
+  atom: false

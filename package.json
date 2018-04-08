@@ -1,0 +1,78 @@
+{
+  "name": "atom-image-uploader",
+  "main": "./lib/atom-image-uploader",
+  "version": "0.0.1",
+  "description": "markdown image uploader",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "atom-image-uploader:toggle"
+  },
+  "configSchema": {
+    "qiniu-access-token": {
+      "type": "string",
+      "title": "七牛-AccessToken",
+      "description": "",
+      "default": "",
+      "order": 1
+    },
+    "qiniu-secret-key": {
+      "type": "string",
+      "title": "七牛-SecretKey",
+      "description": "",
+      "default": "",
+      "order": 2
+    },
+    "qiniu-bucket": {
+      "type": "string",
+      "title": "七牛-Bucket",
+      "description": "",
+      "default": "",
+      "order": 3
+    },
+    "qiniu-domain": {
+      "type": "string",
+      "title": "七牛-Domain",
+      "description": "上传后的域名",
+      "default": "",
+      "order": 4
+    },
+    "qiniu-pre-key": {
+      "type": "string",
+      "title": "七牛-路径前缀",
+      "description": "默认为域名根目录",
+      "default": "",
+      "order": 5
+    },
+    "qiniu-zone": {
+      "type": "string",
+      "default": "Zone_z0",
+      "title": "七牛-上传空间",
+      "description": "默认为Zone_z0",
+      "enum": [
+        "Zone_z0",
+        "Zone_z1",
+        "Zone_z2",
+        "Zone_na0",
+        "Zone_as0"
+      ],
+      "order": 6
+    }
+  },
+  "repository": "https://github.com/jiasm/atom-image-uploader",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "qiniu": "^7.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
